@@ -96,20 +96,3 @@ class Users:
             if user['email']:
                 print(user['email'])
     
-
-u = Users()
-u.get_users()
-u.order_by('email')
-
-print("--- First 3 users ---")
-for user in u.get_first_3_users():
-    print(f"\n> User: {user['name']}")
-    for key, value in user.items():
-        print(f"{key} : {value}")
-        
-u.dump_emails()
-u.remove_all()
-u.dump_emails()
-u.get_users()
-u.dump_emails()
-u.order_by('firstName')
