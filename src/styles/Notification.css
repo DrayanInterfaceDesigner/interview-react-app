@@ -1,0 +1,10 @@
+.Notification {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    background-color: rgb(209, 209, 209);
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: .1rem;
+    transform: translate(-50%, 0);
+}
